@@ -1,11 +1,19 @@
-<script type="text/javascript">
-    var urls = [
+<script>
+    var randNum = Math.floor(Math.random() * 1);
+    var randURLs = [
         "https://www.dionperera.com/clock",
-        'https://www.dionperea.com/dvd'
+        "https://www.dionperera.com/"
     ];
+    if (randNum == 0) {
 
-    function goSomewhere() {
-        var url = urls[Math.floor(Math.random()*urls.length)];
-        window.location = url; // redirect
+        var randURL = Math.floor(Math.random() * randURLs.length);
+
+        window.open(randURLs[randURL]);
+    }
+      if (randNum == 1) {
+
+        var randURL = Math.floor(Math.random() * randURLs.length);
+
+        window.open(randURLs[randURL]);
     }
 </script>
