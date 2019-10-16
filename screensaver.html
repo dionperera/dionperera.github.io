@@ -1,2 +1,11 @@
-chance.url({domain: 'www.socialradar.com/dvd'})
-chance.url({domain: 'www.dionperera.com/clock'})
+<script type="text/javascript">
+    var urls = [
+        "https://www.dionperera.com/clock",
+        'https://www.dionperea.com/dvd'
+    ];
+
+    function goSomewhere() {
+        var url = urls[Math.floor(Math.random()*urls.length)];
+        window.location = url; // redirect
+    }
+</script>
