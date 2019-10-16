@@ -1,19 +1,7 @@
-<script>
-    var randNum = Math.floor(Math.random() * 1);
-    var randURLs = [
-        "clock",
-        "dvd"
-    ];
-    if (randNum == 0) {
-
-        var randURL = Math.floor(Math.random() * randURLs.length);
-
-        window.open(randURLs[randURL]);
-    }
-      if (randNum == 1) {
-
-        var randURL = Math.floor(Math.random() * randURLs.length);
-
-        window.open(randURLs[randURL]);
-    }
+<script type="text/javascript">
+var urls = new Array();
+urls[0] = "https://www.dionperera.com/clock";
+urls[1] = "https://www.dionperera.com/dvd";
+var random = Math.floor(Math.random()*urls.length);
+window.location = urls[random];
 </script>
