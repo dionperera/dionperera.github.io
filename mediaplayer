@@ -1,0 +1,5 @@
+<title>Media Player</title>
+<center><center><input id="audio_file" accept="video/*" type="file" /></center><video id="audio_player" autoplay="autoplay" controls="controls" width="800" height="500"></video><br />
+<script>// <![CDATA[
+audio_file.onchange = function(){ var files = this.files; var file = URL.createObjectURL(files[0]); audio_player.src = file; audio_player.play(); };
+// ]]&gt;</script></center>
