@@ -1,32 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel = "stylesheet" type = "text/css" href = "loading.css" />
-  <script type="text/javascript" src="loading.js"></script>
-  <div class="overlay">
-	<div class="overlayDoor"></div>
-	<div class="overlayContent">
-		<div class="loader">
-			<div class="inner"></div>
-		</div>
-		<div class="skip">LOADING</div>
-	</div>
-</div>
-<link rel="shortcut icon" href="favicon.ico"/>
-  </head>
-<body>
-<noscript>
-<link rel="shortcut icon" href="favicon.ico"/>
-<center><h1>JavaScript Must Be Enabled To View This Website</h1></center>
- <frameset rows="*">
-    <frame frameborder=0 src="https://www.dionperera.com/javaerror.html" name="javascript-must-be-enabled-to-view-this-website" scrolling="auto" noresize>
-  </frameset
-</noscript>
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>CodePen - Fully working Loading Page</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700|Roboto:300,400,500,700");
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+body.loaded {
+  overflow-y: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100000000;
+}
+.overlay .overlayDoor:before, .overlay .overlayDoor:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #111;
+  transition: 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  transition-delay: .8s;
+}
+.overlay .overlayDoor:before {
+  left: 0;
+}
+.overlay .overlayDoor:after {
+  right: 0;
+}
+.overlay.loaded .overlayDoor:before {
+  left: -50%;
+}
+.overlay.loaded .overlayDoor:after {
+  right: -50%;
+}
+.overlay.loaded .overlayContent {
+  opacity: 0;
+  margin-top: -15px;
+}
+.overlay .overlayContent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+}
+.overlay .overlayContent .skip {
+  display: block;
+  width: 130px;
+  text-align: center;
+  margin: 50px auto 0;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Nunito';
+  font-weight: 700;
+  padding: 12px 0;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  transition: 0.2s ease;
+}
+.overlay .overlayContent .skip:hover {
+  background: #ddd;
+  color: #444;
+  border-color: #ddd;
+}
+
+.loader {
+  width: 128px;
+  height: 128px;
+  border: 3px solid #fff;
+  border-bottom: 3px solid transparent;
+  border-radius: 50%;
+  position: relative;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader .inner {
+  width: 64px;
+  height: 64px;
+  border: 3px solid transparent;
+  border-top: 3px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: spinInner 1s linear infinite;
+          animation: spinInner 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinInner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-720deg);
+            transform: rotate(-720deg);
+  }
+}
+@keyframes spinInner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-720deg);
+            transform: rotate(-720deg);
+  }
+}
+body {
+  background: #eee;
+}
+
+.header {
+  background: url("https://source.unsplash.com/7680x4320") center;
+  background-size: cover;
+  height: 100vh;
+}
+.header .darken {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header .darken h1 {
+  font-family: 'Nunito';
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+.header .darken h1 span {
+  font-size: 12px;
+  top: -10px;
+  position: relative;
+}
+.header .darken p {
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 700;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  line-height: 25px;
+}
+
+.contentOther {
+  background: #fff;
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+.contentOther .video {
+  height: 484px;
+  width: 100%;
+  border-radius: 5px;
+}
+.contentOther h1 {
+  font-family: 'Roboto';
+  margin: 0 0 10px 0;
+  font-weight: 400;
+}
+</style>
 <script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-3456358368889687",
-          enable_page_level_ads: true
-     });
+  window.console = window.console || function(t) {};
 </script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+
+<div class="overlay">
+<div class="overlayDoor"></div>
+<div class="overlayContent">
+<div class="loader">
+<div class="inner"></div>
+</div>
+<div class="skip">SKIP</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
 <script language="javascript">
 <!--
 var s="=tdsjqu!mbohvbhf>#kbwbtdsjqu#?=..epdvnfou/xsjuf)voftdbqf)(&4D&7E&76&85&72&31&7F&72&7E&76&4E&33&85&7:&85&7D&76&33&31&74&7G&7F&85&76&7F&85&4E&33&55&7:&7G&7F&31&61&76&83&76&83&72&31&3E&31&55&7:&7G&7F&31&61&76&83&76&83&72&38&84&31&5G&77&77&7:&74&7:&72&7D&31&68&76&73&84&7:&85&76&33&4F&1B&4D&7E&76&85&72&31&7F&72&7E&76&4E&33&75&76&84&74&83&7:&81&85&7:&7G&7F&33&31&74&7G&7F&85&76&7F&85&4E&33&65&79&7:&84&31&7:&84&31&55&7:&7G&7F&31&61&76&83&76&83&72&38&84&31&5G&77&77&7:&74&7:&72&7D&31&68&76&73&84&7:&85&76&3F&33&4F&1B&4D&7E&76&85&72&31&7F&72&7E&76&4E&33&7C&76&8:&88&7G&83&75&84&33&31&74&7G&7F&85&76&7F&85&4E&33&75&7:&7G&7F&31&81&76&83&76&83&72&3D&31&55&7:&7G&7F&31&61&76&83&76&83&72&3D&31&75&7:&7G&7F&75&72&73&76&84&85&3D&31&55&7:&7G&7F&31&55&72&31&53&76&84&85&3D&31&55&7:&7G&7F&31&64&72&87&7:&7F&31&61&76&83&76&83&72&33&4F&1B&4D&7E&76&85&72&31&7F&72&7E&76&4E&33&83&7G&73&7G&85&84&33&31&74&7G&7F&85&76&7F&85&4E&33&7:&7F&75&76&89&3D&31&77&7G&7D&7D&7G&88&33&4F&1B&4D&7E&76&85&72&31&79&85&85&81&3E&76&82&86&7:&87&4E&33&54&7G&7F&85&76&7F&85&3E&65&8:&81&76&33&31&74&7G&7F&85&76&7F&85&4E&33&85&76&89&85&3G&79&85&7E&7D&4C&31&74&79&72&83&84&76&85&4E&86&85&77&3E&49&33&4F&1B&4D&7E&76&85&72&31&7F&72&7E&76&4E&33&7D&72&7F&78&86&72&78&76&33&31&74&7G&7F&85&76&7F&85&4E&33&56&7F&78&7D&7:&84&79&33&4F&1B&4D&7E&76&85&72&31&7F&72&7E&76&4E&33&83&76&87&7:&84&7:&85&3E&72&77&85&76&83&33&31&74&7G&7F&85&76&7F&85&4E&33&44&41&31&75&72&8:&84&33&4F&1B&4D&7E&76&85&72&31&7F&72&7E&76&4E&33&72&86&85&79&7G&83&33&31&74&7G&7F&85&76&7F&85&4E&33&55&7:&7G&7F&31&61&76&83&76&83&72&33&4F(**<00..?=0tdsjqu?";
