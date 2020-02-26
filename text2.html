@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>CodePen - A Pen by  Dion Perera</title>
+<style>
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+a {
+  color:inherit;
+  text-decoration: none;
+ }
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: black;
+}
+
+.glitch {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.glitch .text {
+  -webkit-animation: jerkwhole 2.5s infinite;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.glitch span {
+  position: absolute;
+  color: white;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 4em;
+  text-align: center;
+  -webkit-filter: blur(1px);
+  -webkit-animation: blur 30ms infinite, jerk 50ms infinite;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+}
+
+.glitch span:nth-child(1) {
+  color: red;
+  margin-left: 8px;
+  margin-top: -2px;
+  -webkit-filter: blur(2px);
+}
+
+.glitch span:nth-child(2) {
+  color: green;
+  margin-left: 7px;
+  -webkit-filter: blur(2px);
+}
+
+.glitch span:nth-child(3) {
+  color: blue;
+  margin-left: -7px;
+  margin-top: 4px;
+  -webkit-filter: blur(2px);
+  -webkit-animation: jerkblue .7s infinite;
+}
+
+.glitch span:nth-child(4) {
+  color: white;
+  -webkit-filter: blur(1px);
+  text-shadow: 0 0 50px rgba(255, 255, 255, 0.4);
+}
+
+.glitch span:nth-child(5) {
+  color: rgba(255, 255, 255, 0.4);
+  -webkit-filter: blur(15px);
+}
+
+@-webkit-keyframes blur {
+  0% {
+    -webkit-filter: blur(1px);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-filter: blur(1px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-filter: blur(1px);
+    opacity: 0.6;
+  }
+}
+@-webkit-keyframes jerk {
+  50% {
+    left: 2px;
+  }
+  51% {
+    left: 0;
+  }
+}
+@-webkit-keyframes jerkup {
+  50% {
+    top: 2px;
+  }
+  51% {
+    top: 0;
+  }
+}
+@-webkit-keyframes jerkblue {
+  0% {
+    left: 0;
+  }
+  30% {
+    left: 0;
+  }
+  31% {
+    left: -10px;
+  }
+  32% {
+    left: 0;
+  }
+  98% {
+    left: 0;
+  }
+  100% {
+    left: 10px;
+  }
+}
+@-webkit-keyframes jerkgreen {
+  0% {
+    left: 0;
+  }
+  30% {
+    left: 0;
+  }
+  31% {
+    left: -20px;
+  }
+  32% {
+    left: 0;
+  }
+  98% {
+    left: 0;
+  }
+  100% {
+    left: 15px;
+  }
+}
+@-webkit-keyframes jerkwhole {
+  40% {
+    opacity: 1;
+    top: 0;
+    left: 0px;
+    -webkit-transform: scale(1, 1);
+    -webkit-transform: skew(0, 0);
+  }
+  41% {
+    opacity: 0.2;
+    top: 0px;
+    left: -100px;
+    -webkit-transform: scale(1, 1.2);
+    -webkit-transform: skew(20deg, 0);
+  }
+  42% {
+    opacity: 0.8;
+    top: 0px;
+    left: 50px;
+    -webkit-transform: scale(1, 1.2);
+    -webkit-transform: skew(-40deg, 0);
+  }
+  43% {
+    opacity: 1;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(1, 1);
+    -webkit-transform: skew(0, 0);
+  }
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<head>
+</head>
+<body>
+<section>
+<div class="glitch">
+<div class="text">
+<span>WWW.DIONPERERA.COM
+</section>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<pre><code>&lt;script src=&quot;js/index.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+</body>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script id="rendered-js">
+$(function () {
+  for (i = 0; i < 4; i++) {if (window.CP.shouldStopExecution(0)) break;
+    $('.glitch .text span').eq(0).clone().prependTo('.glitch .text');
+  }window.CP.exitedLoop(0);
+});
+//# sourceURL=pen.js
+    </script>
+</body>
+</html>
