@@ -2,21 +2,11 @@
 <html lang="en">
 <script language="JavaScript">
   var loc = window.location.href+'';
-    if (loc.indexOf('http://www.dionperera.com')==0){
-         window.location.href = loc.replace('http://www.dionperera.com','https://www.dionperera.com');
+    if (loc.indexOf('http://www.dionperera.com')===0){
+         window.location.href = loc.replace('http://','https://www.dionperera.com');
+		 window.location.href = loc.replace('https://','https://www.dionperera.com');
     }
-    else if (loc.indexOf('http://dionperera.com')==0) {
-        window.location.href = loc.replace('http://dionperera.com','https://www.dionperera.com');
-	}
-    else if (loc.indexOf('http://34.107.190.230')==0) {
-        window.location.href = loc.replace('http://34.107.190.230','https://www.dionperera.com');
-    }
-	else if (loc.indexOf('http://')==0) {
-        window.location.href = loc.replace('http://','https://www.dionperera.com/');
-	}
-	else if (loc.indexOf('https://www.dionperera.com')==1) {
-        window.location.href = loc.replace('https://','https://www.dionperera.com/');
-	}
+
 </script>
 <link rel="canonical" href="https://www.dionperera.com/" />
 <head>
