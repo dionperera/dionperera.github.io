@@ -2,12 +2,9 @@
 <html lang="en">
 <script language="JavaScript">
   var loc = window.location.href+'';
-    if (loc.indexOf('https://www.dionperera.com')==0){
+    if (loc.indexOf('https://www.dionperera.com')==1){
+         window.location.href = loc.replace('https://','https://www.dionperera.com');
     }
-    else if (loc.indexOf('https://')==0) {
-        window.location.href = loc.replace('https://','https://www.dionperera.com');
-    }
-	}
     else if (loc.indexOf('http://')==0) {
         window.location.href = loc.replace('http://','https://www.dionperera.com');
     }
