@@ -1,0 +1,927 @@
+<!--[if lt IE 9]><script src="https://cdn.jotfor.ms/js/vendor/flashcanvas.js?3.3.18171" type="text/javascript"></script><![endif]-->
+<script src="https://cdn.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3.3.18171" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/jSignature.min.noconflict.js?3.3.18171" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/jotform.signaturepad.js?3.3.18171" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/imageinfo.js?v=3.3.18171" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/file-uploader/fileuploader.js?v=3.3.18171"></script>
+<script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.18171" type="text/javascript"></script>
+<script type="text/javascript">
+	JotForm.init(function(){
+
+ JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+ JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+ JotForm.calendarOther = {"today":"Today"};
+ var languageOptions = document.querySelectorAll('#langList li'); 
+ for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("6", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });
+ } 
+ JotForm.setCalendar("6", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""});
+
+ JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+ JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+ JotForm.calendarOther = {"today":"Today"};
+ var languageOptions = document.querySelectorAll('#langList li'); 
+ for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("7", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });
+ } 
+ JotForm.setCalendar("7", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""});
+      setTimeout(function() {
+          $('input_8').hint('ex: 23');
+       }, 20);
+      setTimeout(function() {
+          $('input_9').hint('ex: 23');
+       }, 20);
+if (window.JotForm && JotForm.accessible) $('input_14').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_18').setAttribute('tabindex',0);
+
+ JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+ JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+ JotForm.calendarOther = {"today":"Today"};
+ var languageOptions = document.querySelectorAll('#langList li'); 
+ for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("26", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });
+ } 
+ JotForm.setCalendar("26", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""});
+	JotForm.newDefaultTheme = false;
+	JotForm.newPaymentUIForNewCreatedForms = true;
+      JotForm.alterTexts(undefined);
+	JotForm.clearFieldOnHide="disable";
+      setTimeout(function() {
+          JotForm.initMultipleUploads();
+      }, 2);
+	JotForm.submitError="jumpToFirstError";
+    /*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,{"name":"acceptanceOf","qid":"1","text":"Acceptance of Abrams Falls Cabin Lease Agreement","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},null,null,null,{"description":"","name":"checkinDate","qid":"6","text":"Check-In Date","type":"control_datetime"},{"description":"","name":"checkoutDate","qid":"7","text":"Check-out Date","type":"control_datetime"},{"description":"","name":"totalNumber","qid":"8","subLabel":"","text":"Total Number of Guests (Guests can stay overnight)","type":"control_number"},{"description":"","name":"totalNumber9","qid":"9","subLabel":"","text":"Total Number of Visitors (Visitors cannot stay overnight)","type":"control_number"},null,null,null,null,{"description":"","name":"listThe","qid":"14","subLabel":"","text":"List the names of all Guests (Guests can stay overnight)","type":"control_textarea"},null,{"name":"input15","qid":"16","text":"The lease begins at 4:00 PM on the Check-in Date, and ends at 11:00 AM on the Check-out Date.","type":"control_text"},{"name":"input17","qid":"17","text":"Rental Party: The rental party shall consist of Guests and Visitors.","type":"control_text"},{"description":"","name":"listThe18","qid":"18","subLabel":"","text":"List the names of all Visitors (Visitors cannot stay overnight)","type":"control_textarea"},{"name":"input19","qid":"19","text":"The full Rental Party must be disclosed. All guests &amp; visitors must be listed on this “Acceptance of Abrams Falls Cabin Lease Agreement”.  Only members of the rental party may stay at the property. Please note that children of all ages count as Guest(s) or Visitor(s). The rental rate of the Abrams falls Cabin is based on the total occupancy. You must immediately notify us in writing if the number of occupants changes. Additional charges may apply. A charge of $25.00 per person per night for guests not disclosed on the reservation will be assessed. The charge per unapproved visitor is $10.00 per person per day. The Property shall be used for residential vacation rental purposes only. Special events such as parties, receptions, etc. shall not be allowed without the express written consent of Rental Agent AND the property owner.  Over-crowding or misrepresentation is grounds for immediate eviction without refund. ","type":"control_text"},{"name":"pageBreak","qid":"20","text":"Page Break","type":"control_pagebreak"},null,null,{"description":"","name":"input23","qid":"23","text":"","type":"control_checkbox"},{"description":"","name":"guestSignature","qid":"24","subLabel":"","text":"Guest Signature (Leasing Party)","type":"control_signature"},{"description":"","name":"guestName","qid":"25","text":"Guest Name (Leasing Party)","type":"control_fullname"},{"description":"","name":"dateOf","qid":"26","text":"Date of Form Submission","type":"control_datetime"},{"description":"","name":"address","qid":"27","text":"Address","type":"control_address"},{"description":"","name":"phoneNumber28","qid":"28","text":"Phone Number (Home)","type":"control_phone"},{"description":"","name":"phoneNumber29","qid":"29","text":"Phone Number (Cell)","type":"control_phone"},{"description":"","name":"emailAddress","qid":"30","subLabel":"example@example.com","text":"Email Address","type":"control_email"},{"description":"","name":"governmentissuedPhoto","qid":"31","subLabel":"","text":"Government-Issued Photo ID","type":"control_fileupload"},{"name":"input32","qid":"32","text":"Although we will reserve you the cabin once the payment or deposit is paid, we must have the following completed documents PRIOR to sendingout the cabin access codes. Please send us the completed documents via email, mail or Fax. Noncompliance will void the reservation and forfeitthe rental fee:1. Duly Completed “Acceptance of Abrams Falls Cabin Lease Agreement” (this form).2. Bio-Data Page of your passport or government-issued Picture ID.Contact Information (For Questions and Concerns):Email: dsperera@csscom.netFacsimile (FAX) #: +1-775-542-1805 Address: 9015 Sandpiper Dr, Charlotte, NC 28277-5570Our Contact Phone (voice\u002Ftext) #: +1-704-266-0545","type":"control_text"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"acceptanceOf","qid":"1","text":"Acceptance of Abrams Falls Cabin Lease Agreement","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},null,null,null,{"description":"","name":"checkinDate","qid":"6","text":"Check-In Date","type":"control_datetime"},{"description":"","name":"checkoutDate","qid":"7","text":"Check-out Date","type":"control_datetime"},{"description":"","name":"totalNumber","qid":"8","subLabel":"","text":"Total Number of Guests (Guests can stay overnight)","type":"control_number"},{"description":"","name":"totalNumber9","qid":"9","subLabel":"","text":"Total Number of Visitors (Visitors cannot stay overnight)","type":"control_number"},null,null,null,null,{"description":"","name":"listThe","qid":"14","subLabel":"","text":"List the names of all Guests (Guests can stay overnight)","type":"control_textarea"},null,{"name":"input15","qid":"16","text":"The lease begins at 4:00 PM on the Check-in Date, and ends at 11:00 AM on the Check-out Date.","type":"control_text"},{"name":"input17","qid":"17","text":"Rental Party: The rental party shall consist of Guests and Visitors.","type":"control_text"},{"description":"","name":"listThe18","qid":"18","subLabel":"","text":"List the names of all Visitors (Visitors cannot stay overnight)","type":"control_textarea"},{"name":"input19","qid":"19","text":"The full Rental Party must be disclosed. All guests &amp; visitors must be listed on this “Acceptance of Abrams Falls Cabin Lease Agreement”.  Only members of the rental party may stay at the property. Please note that children of all ages count as Guest(s) or Visitor(s). The rental rate of the Abrams falls Cabin is based on the total occupancy. You must immediately notify us in writing if the number of occupants changes. Additional charges may apply. A charge of $25.00 per person per night for guests not disclosed on the reservation will be assessed. The charge per unapproved visitor is $10.00 per person per day. The Property shall be used for residential vacation rental purposes only. Special events such as parties, receptions, etc. shall not be allowed without the express written consent of Rental Agent AND the property owner.  Over-crowding or misrepresentation is grounds for immediate eviction without refund. ","type":"control_text"},{"name":"pageBreak","qid":"20","text":"Page Break","type":"control_pagebreak"},null,null,{"description":"","name":"input23","qid":"23","text":"","type":"control_checkbox"},{"description":"","name":"guestSignature","qid":"24","subLabel":"","text":"Guest Signature (Leasing Party)","type":"control_signature"},{"description":"","name":"guestName","qid":"25","text":"Guest Name (Leasing Party)","type":"control_fullname"},{"description":"","name":"dateOf","qid":"26","text":"Date of Form Submission","type":"control_datetime"},{"description":"","name":"address","qid":"27","text":"Address","type":"control_address"},{"description":"","name":"phoneNumber28","qid":"28","text":"Phone Number (Home)","type":"control_phone"},{"description":"","name":"phoneNumber29","qid":"29","text":"Phone Number (Cell)","type":"control_phone"},{"description":"","name":"emailAddress","qid":"30","subLabel":"example@example.com","text":"Email Address","type":"control_email"},{"description":"","name":"governmentissuedPhoto","qid":"31","subLabel":"","text":"Government-Issued Photo ID","type":"control_fileupload"},{"name":"input32","qid":"32","text":"Although we will reserve you the cabin once the payment or deposit is paid, we must have the following completed documents PRIOR to sendingout the cabin access codes. Please send us the completed documents via email, mail or Fax. Noncompliance will void the reservation and forfeitthe rental fee:1. Duly Completed “Acceptance of Abrams Falls Cabin Lease Agreement” (this form).2. Bio-Data Page of your passport or government-issued Picture ID.Contact Information (For Questions and Concerns):Email: dsperera@csscom.netFacsimile (FAX) #: +1-775-542-1805 Address: 9015 Sandpiper Dr, Charlotte, NC 28277-5570Our Contact Phone (voice\u002Ftext) #: +1-704-266-0545","type":"control_text"}]);}, 20); 
+</script>
+<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.18171" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.18171" />
+<link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.18171" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?"/>
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.18171" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.18171" />
+<style type="text/css">
+    .form-label-left{
+        width:150px;
+    }
+    .form-line{
+        padding-top:12px;
+        padding-bottom:12px;
+    }
+    .form-label-right{
+        width:150px;
+    }
+    .form-all{
+        width:690px;
+        color:#555 !important;
+        font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+        font-size:14px;
+    }
+</style>
+
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+.form-label.form-label-auto { display: block; float: none; text-align: left; width: inherit; } /*PREFERENCES STYLE*/
+    .form-all {
+      font-family: Lucida Grande, sans-serif;
+    }
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-family: Lucida Grande, sans-serif;
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-family: Lucida Grande, sans-serif;
+    }
+    .form-header-group {
+      font-family: Lucida Grande, sans-serif;
+    }
+    .form-label {
+      font-family: Lucida Grande, sans-serif;
+    }
+  
+    .form-label.form-label-auto {
+      
+    display: block;
+    float: none;
+    text-align: left;
+    width: 100%;
+  
+    }
+  
+    .form-line {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+  
+    .form-all {
+      max-width: 690px;
+      width: 100%;
+    }
+  
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+      width: 150px;
+    }
+  
+    .form-all {
+      font-size: 14px
+    }
+    .form-all .qq-upload-button,
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-size: 14px
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-size: 14px
+    }
+  
+    .supernova .form-all, .form-all {
+      background-color: #fff;
+      border: 1px solid transparent;
+    }
+  
+    .form-all {
+      color: #555;
+    }
+    .form-header-group .form-header {
+      color: #555;
+    }
+    .form-header-group .form-subHeader {
+      color: #555;
+    }
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label {
+      color: #555;
+    }
+    .form-sub-label {
+      color: #6f6f6f;
+    }
+  
+    .supernova {
+      background-color: #f5f5f5;
+    }
+    .supernova body {
+      background: transparent;
+    }
+  
+    .form-textbox,
+    .form-textarea,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+      background-color: #fff;
+    }
+  
+    .supernova {
+      background-image: none;
+    }
+    #stage {
+      background-image: none;
+    }
+  
+    .form-all {
+      background-image: none;
+    }
+  
+
+    .form-all {
+      position: relative;
+    }
+    .form-all:before {
+      content: "";
+      background-image: url("https://www.jotform.com/uploads/dionp.usa/form_files/8f5a6b_32b98ee3118a4cf2ab8f5d80c7e70f00_mv2.5ed69bb2a37528.84687014.webp");
+      display: inline-block;
+      height: 230px;
+      position: absolute;
+      background-size: 685px 230px;
+      background-repeat: no-repeat;
+      width: 100%;
+    }
+    .form-all {
+      margin-top: 240px !important;
+    }
+    .form-all:before {
+      top: -240px;
+      background-position: top center;
+    }
+           
+  .ie-8 .form-all:before { display: none; }
+  .ie-8 {
+    margin-top: auto;
+    margin-top: initial;
+  }
+  
+  /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" action="https://submit.jotform.com/submit/201535750175048/" method="post" enctype="multipart/form-data" name="form_201535750175048" id="201535750175048" accept-charset="utf-8" autocomplete="on">
+  <input type="hidden" name="formID" value="201535750175048" />
+  <input type="hidden" id="JWTContainer" value="" />
+  <input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-default">
+          <div class="header-text httal htvam">
+            <h2 id="header_1" class="form-header" data-component="header">
+              Acceptance of Abrams Falls Cabin Lease Agreement
+            </h2>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_16">
+        <div id="cid_16" class="form-input-wide">
+          <div id="text_16" class="form-html" data-component="text">
+            <p>The lease begins at 4:00 PM on the Check-in Date, and ends at 11:00 AM on the Check-out Date.</p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_datetime" id="id_6">
+        <label class="form-label form-label-top form-label-auto" id="label_6" for="lite_mode_6">
+          Check-In Date
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_6" class="form-input-wide jf-required">
+          <div data-wrapper-react="true">
+            <div style="display:none">
+              <span class="form-sub-label-container " style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="month_6" name="q6_checkinDate[month]" size="2" data-maxlength="2" maxLength="2" value="" required="" autoComplete="off" aria-labelledby="label_6 sublabel_6_month" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="month_6" id="sublabel_6_month" style="min-height:13px" aria-hidden="false"> Month </label>
+              </span>
+              <span class="form-sub-label-container " style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="day_6" name="q6_checkinDate[day]" size="2" data-maxlength="2" maxLength="2" value="" required="" autoComplete="off" aria-labelledby="label_6 sublabel_6_day" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="day_6" id="sublabel_6_day" style="min-height:13px" aria-hidden="false"> Day </label>
+              </span>
+              <span class="form-sub-label-container " style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="year_6" name="q6_checkinDate[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" required="" autoComplete="off" aria-labelledby="label_6 sublabel_6_year" />
+                <label class="form-sub-label" for="year_6" id="sublabel_6_year" style="min-height:13px" aria-hidden="false"> Year </label>
+              </span>
+            </div>
+            <span class="form-sub-label-container " style="vertical-align:top">
+              <input type="text" class="form-textbox validate[required, limitDate, validateLiteDate]" id="lite_mode_6" size="12" data-maxlength="12" maxLength="12" data-age="" value="" required="" data-format="mmddyyyy" data-seperator="-" placeholder="mm-dd-yyyy" autoComplete="off" aria-labelledby="label_6 sublabel_6_litemode" />
+              <img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_6_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v1" />
+              <label class="form-sub-label" for="lite_mode_6" id="sublabel_6_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_datetime" id="id_7">
+        <label class="form-label form-label-top form-label-auto" id="label_7" for="lite_mode_7">
+          Check-out Date
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_7" class="form-input-wide jf-required">
+          <div data-wrapper-react="true">
+            <div style="display:none">
+              <span class="form-sub-label-container " style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="month_7" name="q7_checkoutDate[month]" size="2" data-maxlength="2" maxLength="2" value="" required="" autoComplete="off" aria-labelledby="label_7 sublabel_7_month" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="month_7" id="sublabel_7_month" style="min-height:13px" aria-hidden="false"> Month </label>
+              </span>
+              <span class="form-sub-label-container " style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="day_7" name="q7_checkoutDate[day]" size="2" data-maxlength="2" maxLength="2" value="" required="" autoComplete="off" aria-labelledby="label_7 sublabel_7_day" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="day_7" id="sublabel_7_day" style="min-height:13px" aria-hidden="false"> Day </label>
+              </span>
+              <span class="form-sub-label-container " style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="year_7" name="q7_checkoutDate[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" required="" autoComplete="off" aria-labelledby="label_7 sublabel_7_year" />
+                <label class="form-sub-label" for="year_7" id="sublabel_7_year" style="min-height:13px" aria-hidden="false"> Year </label>
+              </span>
+            </div>
+            <span class="form-sub-label-container " style="vertical-align:top">
+              <input type="text" class="form-textbox validate[required, limitDate, validateLiteDate]" id="lite_mode_7" size="12" data-maxlength="12" maxLength="12" data-age="" value="" required="" data-format="mmddyyyy" data-seperator="-" placeholder="mm-dd-yyyy" autoComplete="off" aria-labelledby="label_7 sublabel_7_litemode" />
+              <img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_7_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v1" />
+              <label class="form-sub-label" for="lite_mode_7" id="sublabel_7_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_number" id="id_8">
+        <label class="form-label form-label-top form-label-auto" id="label_8" for="input_8">
+          Total Number of Guests (Guests can stay overnight)
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_8" class="form-input-wide jf-required">
+          <input type="number" id="input_8" name="q8_totalNumber" data-type="input-number" class=" form-number-input form-textbox validate[required]" style="width:60px" size="5" value="" placeholder="ex: 23" data-component="number" aria-labelledby="label_8" required="" step="any" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_number" id="id_9">
+        <label class="form-label form-label-top form-label-auto" id="label_9" for="input_9"> Total Number of Visitors (Visitors cannot stay overnight) </label>
+        <div id="cid_9" class="form-input-wide">
+          <input type="number" id="input_9" name="q9_totalNumber9" data-type="input-number" class=" form-number-input form-textbox" style="width:60px" size="5" value="" placeholder="ex: 23" data-component="number" aria-labelledby="label_9" step="any" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_17">
+        <div id="cid_17" class="form-input-wide">
+          <div id="text_17" class="form-html" data-component="text">
+            <p>Rental Party: The rental party shall consist of Guests and Visitors.</p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_textarea" id="id_14">
+        <label class="form-label form-label-top form-label-auto" id="label_14" for="input_14">
+          List the names of all Guests (Guests can stay overnight)
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_14" class="form-input-wide jf-required">
+          <textarea id="input_14" class="form-textarea validate[required]" name="q14_listThe" cols="40" rows="6" data-component="textarea" required="" aria-labelledby="label_14"></textarea>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textarea" id="id_18">
+        <label class="form-label form-label-top form-label-auto" id="label_18" for="input_18"> List the names of all Visitors (Visitors cannot stay overnight) </label>
+        <div id="cid_18" class="form-input-wide">
+          <textarea id="input_18" class="form-textarea" name="q18_listThe18" cols="40" rows="6" data-component="textarea" aria-labelledby="label_18"></textarea>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_19">
+        <div id="cid_19" class="form-input-wide">
+          <div id="text_19" class="form-html" data-component="text">
+            <p><span style="font-size: 8pt;">The full Rental Party must be disclosed. All guests &amp; visitors must be listed on this “Acceptance of Abrams Falls Cabin Lease Agreement”.  Only members of the rental party may stay at the property. Please note that children of all ages count as Guest(s) or Visitor(s). The rental rate of the Abrams falls Cabin is based on the total occupancy. You must immediately notify us in writing if the number of occupants changes. Additional charges may apply. A charge of $25.00 per person per night for guests not disclosed on the reservation will be assessed. The charge per unapproved visitor is $10.00 per person per day. The Property shall be used for residential vacation rental purposes only. Special events such as parties, receptions, etc. shall not be allowed without the express written consent of Rental Agent AND the property owner.  Over-crowding or misrepresentation is grounds for immediate eviction without refund. </span></p>
+          </div>
+        </div>
+      </li>
+      <li id="cid_20" class="form-input-wide" data-type="control_pagebreak">
+        <div class="form-pagebreak" data-component="pagebreak">
+          <div class="form-pagebreak-back-container">
+            <button id="form-pagebreak-back_20" type="button" class="form-pagebreak-back  jf-form-buttons" data-component="pagebreak-back">
+              Back
+            </button>
+          </div>
+          <div class="form-pagebreak-next-container">
+            <button id="form-pagebreak-next_20" type="button" class="form-pagebreak-next  jf-form-buttons" data-component="pagebreak-next">
+              Next
+            </button>
+          </div>
+          <div style="clear:both" class="pageInfo form-sub-label" id="pageInfo_20">
+          </div>
+        </div>
+      </li>
+    </ul>
+    <ul class="form-section page-section" style="display:none;">
+      <li class="form-line jf-required" data-type="control_checkbox" id="id_23">
+        <label class="form-label form-label-top form-label-auto" id="label_23" for="input_23">
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_23" class="form-input-wide jf-required">
+          <div class="form-single-column" role="group" aria-labelledby="label_23" data-component="checkbox">
+            <span class="form-checkbox-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+              <input type="checkbox" class="form-checkbox validate[required]" id="input_23_0" name="q23_input23[]" value="I have received, read, and agreed to the Abrams Falls Cabin Rules, Policies &amp; Terms of the Lease Agreement." required="" />
+              <label id="label_input_23_0" for="input_23_0"> I have received, read, and agreed to the Abrams Falls Cabin Rules, Policies & Terms of the Lease Agreement. </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_signature" id="id_24">
+        <label class="form-label form-label-top form-label-auto" id="label_24" for="input_24">
+          Guest Signature (Leasing Party)
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_24" class="form-input-wide jf-required">
+          <div data-wrapper-react="true">
+            <div id="signature_pad_24" class="signature-pad-wrapper" style="width:402px;height:202px">
+              <div data-wrapper-react="true">
+                <!--[if IE 7]>
+                  <script type="text/javascript" src="/js/vendor/json2.js"></script>
+                <![endif]-->
+              </div>
+              <div class="signature-line signature-wrapper signature-placeholder" data-component="signature" style="width:402px;height:202px">
+                <div id="sig_pad_24" data-width="400" data-height="200" data-id="24" data-required="true" class="pad validate[required]">
+                </div>
+                <input type="hidden" name="q24_guestSignature" class="output4" id="input_24" />
+              </div>
+              <span class="clear-pad-btn clear-pad" role="button" tabindex="0">
+                Clear
+              </span>
+            </div>
+            <div data-wrapper-react="true">
+              <script type="text/javascript">
+              window.signatureForm = true
+              </script>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_fullname" id="id_25">
+        <label class="form-label form-label-top form-label-auto" id="label_25" for="first_25">
+          Guest Name (Leasing Party)
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_25" class="form-input-wide jf-required">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container " style="vertical-align:top" data-input-type="first">
+              <input type="text" id="first_25" name="q25_guestName[first]" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_25 sublabel_25_first" required="" />
+              <label class="form-sub-label" for="first_25" id="sublabel_25_first" style="min-height:13px" aria-hidden="false"> First Name </label>
+            </span>
+            <span class="form-sub-label-container " style="vertical-align:top" data-input-type="last">
+              <input type="text" id="last_25" name="q25_guestName[last]" class="form-textbox validate[required]" size="15" value="" data-component="last" aria-labelledby="label_25 sublabel_25_last" required="" />
+              <label class="form-sub-label" for="last_25" id="sublabel_25_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_datetime" id="id_26">
+        <label class="form-label form-label-top form-label-auto" id="label_26" for="lite_mode_26">
+          Date of Form Submission
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_26" class="form-input-wide jf-required">
+          <div data-wrapper-react="true">
+            <div style="display:none">
+              <span class="form-sub-label-container " style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="month_26" name="q26_dateOf[month]" size="2" data-maxlength="2" maxLength="2" value="" required="" autoComplete="off" aria-labelledby="label_26 sublabel_26_month" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="month_26" id="sublabel_26_month" style="min-height:13px" aria-hidden="false"> Month </label>
+              </span>
+              <span class="form-sub-label-container " style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="day_26" name="q26_dateOf[day]" size="2" data-maxlength="2" maxLength="2" value="" required="" autoComplete="off" aria-labelledby="label_26 sublabel_26_day" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="day_26" id="sublabel_26_day" style="min-height:13px" aria-hidden="false"> Day </label>
+              </span>
+              <span class="form-sub-label-container " style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="year_26" name="q26_dateOf[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" required="" autoComplete="off" aria-labelledby="label_26 sublabel_26_year" />
+                <label class="form-sub-label" for="year_26" id="sublabel_26_year" style="min-height:13px" aria-hidden="false"> Year </label>
+              </span>
+            </div>
+            <span class="form-sub-label-container " style="vertical-align:top">
+              <input type="text" class="form-textbox validate[required, limitDate, validateLiteDate]" id="lite_mode_26" size="12" data-maxlength="12" maxLength="12" data-age="" value="" required="" data-format="mmddyyyy" data-seperator="-" placeholder="mm-dd-yyyy" autoComplete="off" aria-labelledby="label_26 sublabel_26_litemode" />
+              <img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_26_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v1" />
+              <label class="form-sub-label" for="lite_mode_26" id="sublabel_26_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_address" id="id_27">
+        <label class="form-label form-label-top form-label-auto" id="label_27" for="input_27_addr_line1">
+          Address
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_27" class="form-input-wide jf-required">
+          <div summary="" class="form-address-table jsTest-addressField">
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span colSpan="2" class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container " style="vertical-align:top">
+                  <input type="text" id="input_27_addr_line1" name="q27_address[addr_line1]" class="form-textbox validate[required] form-address-line" value="" data-component="address_line_1" aria-labelledby="label_27 sublabel_27_addr_line1" required="" />
+                  <label class="form-sub-label" for="input_27_addr_line1" id="sublabel_27_addr_line1" style="min-height:13px" aria-hidden="false"> Street Address </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span colSpan="2" class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container " style="vertical-align:top">
+                  <input type="text" id="input_27_addr_line2" name="q27_address[addr_line2]" class="form-textbox form-address-line" size="46" value="" data-component="address_line_2" aria-labelledby="label_27 sublabel_27_addr_line2" />
+                  <label class="form-sub-label" for="input_27_addr_line2" id="sublabel_27_addr_line2" style="min-height:13px" aria-hidden="false"> Street Address Line 2 (Optional) </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-city-line jsTest-address-lineField">
+                <span class="form-sub-label-container " style="vertical-align:top">
+                  <input type="text" id="input_27_city" name="q27_address[city]" class="form-textbox validate[required] form-address-city" size="21" value="" data-component="city" aria-labelledby="label_27 sublabel_27_city" required="" />
+                  <label class="form-sub-label" for="input_27_city" id="sublabel_27_city" style="min-height:13px" aria-hidden="false"> City </label>
+                </span>
+              </span>
+              <span class="form-address-line form-address-state-line jsTest-address-lineField">
+                <span class="form-sub-label-container " style="vertical-align:top">
+                  <input type="text" id="input_27_state" name="q27_address[state]" class="form-textbox validate[required] form-address-state" size="22" value="" data-component="state" aria-labelledby="label_27 sublabel_27_state" required="" />
+                  <label class="form-sub-label" for="input_27_state" id="sublabel_27_state" style="min-height:13px" aria-hidden="false"> State / Province </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-zip-line jsTest-address-lineField">
+                <span class="form-sub-label-container " style="vertical-align:top">
+                  <input type="text" id="input_27_postal" name="q27_address[postal]" class="form-textbox validate[required] form-address-postal" size="10" value="" data-component="zip" aria-labelledby="label_27 sublabel_27_postal" required="" />
+                  <label class="form-sub-label" for="input_27_postal" id="sublabel_27_postal" style="min-height:13px" aria-hidden="false"> Postal / Zip Code </label>
+                </span>
+              </span>
+              <span class="form-address-line form-address-country-line jsTest-address-lineField">
+                <span class="form-sub-label-container " style="vertical-align:top">
+                  <select class="form-dropdown validate[required] form-address-country noTranslate" name="q27_address[country]" id="input_27_country" data-component="country" required="" aria-labelledby="label_27 sublabel_27_country">
+                    <option value=""> Please Select </option>
+                    <option selected="" value="United States"> United States </option>
+                    <option value="Afghanistan"> Afghanistan </option>
+                    <option value="Albania"> Albania </option>
+                    <option value="Algeria"> Algeria </option>
+                    <option value="American Samoa"> American Samoa </option>
+                    <option value="Andorra"> Andorra </option>
+                    <option value="Angola"> Angola </option>
+                    <option value="Anguilla"> Anguilla </option>
+                    <option value="Antigua and Barbuda"> Antigua and Barbuda </option>
+                    <option value="Argentina"> Argentina </option>
+                    <option value="Armenia"> Armenia </option>
+                    <option value="Aruba"> Aruba </option>
+                    <option value="Australia"> Australia </option>
+                    <option value="Austria"> Austria </option>
+                    <option value="Azerbaijan"> Azerbaijan </option>
+                    <option value="The Bahamas"> The Bahamas </option>
+                    <option value="Bahrain"> Bahrain </option>
+                    <option value="Bangladesh"> Bangladesh </option>
+                    <option value="Barbados"> Barbados </option>
+                    <option value="Belarus"> Belarus </option>
+                    <option value="Belgium"> Belgium </option>
+                    <option value="Belize"> Belize </option>
+                    <option value="Benin"> Benin </option>
+                    <option value="Bermuda"> Bermuda </option>
+                    <option value="Bhutan"> Bhutan </option>
+                    <option value="Bolivia"> Bolivia </option>
+                    <option value="Bosnia and Herzegovina"> Bosnia and Herzegovina </option>
+                    <option value="Botswana"> Botswana </option>
+                    <option value="Brazil"> Brazil </option>
+                    <option value="Brunei"> Brunei </option>
+                    <option value="Bulgaria"> Bulgaria </option>
+                    <option value="Burkina Faso"> Burkina Faso </option>
+                    <option value="Burundi"> Burundi </option>
+                    <option value="Cambodia"> Cambodia </option>
+                    <option value="Cameroon"> Cameroon </option>
+                    <option value="Canada"> Canada </option>
+                    <option value="Cape Verde"> Cape Verde </option>
+                    <option value="Cayman Islands"> Cayman Islands </option>
+                    <option value="Central African Republic"> Central African Republic </option>
+                    <option value="Chad"> Chad </option>
+                    <option value="Chile"> Chile </option>
+                    <option value="China"> China </option>
+                    <option value="Christmas Island"> Christmas Island </option>
+                    <option value="Cocos (Keeling) Islands"> Cocos (Keeling) Islands </option>
+                    <option value="Colombia"> Colombia </option>
+                    <option value="Comoros"> Comoros </option>
+                    <option value="Congo"> Congo </option>
+                    <option value="Cook Islands"> Cook Islands </option>
+                    <option value="Costa Rica"> Costa Rica </option>
+                    <option value="Cote d&#x27;Ivoire"> Cote d&#x27;Ivoire </option>
+                    <option value="Croatia"> Croatia </option>
+                    <option value="Cuba"> Cuba </option>
+                    <option value="Curacao"> Curacao </option>
+                    <option value="Cyprus"> Cyprus </option>
+                    <option value="Czech Republic"> Czech Republic </option>
+                    <option value="Democratic Republic of the Congo"> Democratic Republic of the Congo </option>
+                    <option value="Denmark"> Denmark </option>
+                    <option value="Djibouti"> Djibouti </option>
+                    <option value="Dominica"> Dominica </option>
+                    <option value="Dominican Republic"> Dominican Republic </option>
+                    <option value="Ecuador"> Ecuador </option>
+                    <option value="Egypt"> Egypt </option>
+                    <option value="El Salvador"> El Salvador </option>
+                    <option value="Equatorial Guinea"> Equatorial Guinea </option>
+                    <option value="Eritrea"> Eritrea </option>
+                    <option value="Estonia"> Estonia </option>
+                    <option value="Ethiopia"> Ethiopia </option>
+                    <option value="Falkland Islands"> Falkland Islands </option>
+                    <option value="Faroe Islands"> Faroe Islands </option>
+                    <option value="Fiji"> Fiji </option>
+                    <option value="Finland"> Finland </option>
+                    <option value="France"> France </option>
+                    <option value="French Polynesia"> French Polynesia </option>
+                    <option value="Gabon"> Gabon </option>
+                    <option value="The Gambia"> The Gambia </option>
+                    <option value="Georgia"> Georgia </option>
+                    <option value="Germany"> Germany </option>
+                    <option value="Ghana"> Ghana </option>
+                    <option value="Gibraltar"> Gibraltar </option>
+                    <option value="Greece"> Greece </option>
+                    <option value="Greenland"> Greenland </option>
+                    <option value="Grenada"> Grenada </option>
+                    <option value="Guadeloupe"> Guadeloupe </option>
+                    <option value="Guam"> Guam </option>
+                    <option value="Guatemala"> Guatemala </option>
+                    <option value="Guernsey"> Guernsey </option>
+                    <option value="Guinea"> Guinea </option>
+                    <option value="Guinea-Bissau"> Guinea-Bissau </option>
+                    <option value="Guyana"> Guyana </option>
+                    <option value="Haiti"> Haiti </option>
+                    <option value="Honduras"> Honduras </option>
+                    <option value="Hong Kong"> Hong Kong </option>
+                    <option value="Hungary"> Hungary </option>
+                    <option value="Iceland"> Iceland </option>
+                    <option value="India"> India </option>
+                    <option value="Indonesia"> Indonesia </option>
+                    <option value="Iran"> Iran </option>
+                    <option value="Iraq"> Iraq </option>
+                    <option value="Ireland"> Ireland </option>
+                    <option value="Israel"> Israel </option>
+                    <option value="Italy"> Italy </option>
+                    <option value="Jamaica"> Jamaica </option>
+                    <option value="Japan"> Japan </option>
+                    <option value="Jersey"> Jersey </option>
+                    <option value="Jordan"> Jordan </option>
+                    <option value="Kazakhstan"> Kazakhstan </option>
+                    <option value="Kenya"> Kenya </option>
+                    <option value="Kiribati"> Kiribati </option>
+                    <option value="North Korea"> North Korea </option>
+                    <option value="South Korea"> South Korea </option>
+                    <option value="Kosovo"> Kosovo </option>
+                    <option value="Kuwait"> Kuwait </option>
+                    <option value="Kyrgyzstan"> Kyrgyzstan </option>
+                    <option value="Laos"> Laos </option>
+                    <option value="Latvia"> Latvia </option>
+                    <option value="Lebanon"> Lebanon </option>
+                    <option value="Lesotho"> Lesotho </option>
+                    <option value="Liberia"> Liberia </option>
+                    <option value="Libya"> Libya </option>
+                    <option value="Liechtenstein"> Liechtenstein </option>
+                    <option value="Lithuania"> Lithuania </option>
+                    <option value="Luxembourg"> Luxembourg </option>
+                    <option value="Macau"> Macau </option>
+                    <option value="Macedonia"> Macedonia </option>
+                    <option value="Madagascar"> Madagascar </option>
+                    <option value="Malawi"> Malawi </option>
+                    <option value="Malaysia"> Malaysia </option>
+                    <option value="Maldives"> Maldives </option>
+                    <option value="Mali"> Mali </option>
+                    <option value="Malta"> Malta </option>
+                    <option value="Marshall Islands"> Marshall Islands </option>
+                    <option value="Martinique"> Martinique </option>
+                    <option value="Mauritania"> Mauritania </option>
+                    <option value="Mauritius"> Mauritius </option>
+                    <option value="Mayotte"> Mayotte </option>
+                    <option value="Mexico"> Mexico </option>
+                    <option value="Micronesia"> Micronesia </option>
+                    <option value="Moldova"> Moldova </option>
+                    <option value="Monaco"> Monaco </option>
+                    <option value="Mongolia"> Mongolia </option>
+                    <option value="Montenegro"> Montenegro </option>
+                    <option value="Montserrat"> Montserrat </option>
+                    <option value="Morocco"> Morocco </option>
+                    <option value="Mozambique"> Mozambique </option>
+                    <option value="Myanmar"> Myanmar </option>
+                    <option value="Nagorno-Karabakh"> Nagorno-Karabakh </option>
+                    <option value="Namibia"> Namibia </option>
+                    <option value="Nauru"> Nauru </option>
+                    <option value="Nepal"> Nepal </option>
+                    <option value="Netherlands"> Netherlands </option>
+                    <option value="Netherlands Antilles"> Netherlands Antilles </option>
+                    <option value="New Caledonia"> New Caledonia </option>
+                    <option value="New Zealand"> New Zealand </option>
+                    <option value="Nicaragua"> Nicaragua </option>
+                    <option value="Niger"> Niger </option>
+                    <option value="Nigeria"> Nigeria </option>
+                    <option value="Niue"> Niue </option>
+                    <option value="Norfolk Island"> Norfolk Island </option>
+                    <option value="Turkish Republic of Northern Cyprus"> Turkish Republic of Northern Cyprus </option>
+                    <option value="Northern Mariana"> Northern Mariana </option>
+                    <option value="Norway"> Norway </option>
+                    <option value="Oman"> Oman </option>
+                    <option value="Pakistan"> Pakistan </option>
+                    <option value="Palau"> Palau </option>
+                    <option value="Palestine"> Palestine </option>
+                    <option value="Panama"> Panama </option>
+                    <option value="Papua New Guinea"> Papua New Guinea </option>
+                    <option value="Paraguay"> Paraguay </option>
+                    <option value="Peru"> Peru </option>
+                    <option value="Philippines"> Philippines </option>
+                    <option value="Pitcairn Islands"> Pitcairn Islands </option>
+                    <option value="Poland"> Poland </option>
+                    <option value="Portugal"> Portugal </option>
+                    <option value="Puerto Rico"> Puerto Rico </option>
+                    <option value="Qatar"> Qatar </option>
+                    <option value="Republic of the Congo"> Republic of the Congo </option>
+                    <option value="Romania"> Romania </option>
+                    <option value="Russia"> Russia </option>
+                    <option value="Rwanda"> Rwanda </option>
+                    <option value="Saint Barthelemy"> Saint Barthelemy </option>
+                    <option value="Saint Helena"> Saint Helena </option>
+                    <option value="Saint Kitts and Nevis"> Saint Kitts and Nevis </option>
+                    <option value="Saint Lucia"> Saint Lucia </option>
+                    <option value="Saint Martin"> Saint Martin </option>
+                    <option value="Saint Pierre and Miquelon"> Saint Pierre and Miquelon </option>
+                    <option value="Saint Vincent and the Grenadines"> Saint Vincent and the Grenadines </option>
+                    <option value="Samoa"> Samoa </option>
+                    <option value="San Marino"> San Marino </option>
+                    <option value="Sao Tome and Principe"> Sao Tome and Principe </option>
+                    <option value="Saudi Arabia"> Saudi Arabia </option>
+                    <option value="Senegal"> Senegal </option>
+                    <option value="Serbia"> Serbia </option>
+                    <option value="Seychelles"> Seychelles </option>
+                    <option value="Sierra Leone"> Sierra Leone </option>
+                    <option value="Singapore"> Singapore </option>
+                    <option value="Slovakia"> Slovakia </option>
+                    <option value="Slovenia"> Slovenia </option>
+                    <option value="Solomon Islands"> Solomon Islands </option>
+                    <option value="Somalia"> Somalia </option>
+                    <option value="Somaliland"> Somaliland </option>
+                    <option value="South Africa"> South Africa </option>
+                    <option value="South Ossetia"> South Ossetia </option>
+                    <option value="South Sudan"> South Sudan </option>
+                    <option value="Spain"> Spain </option>
+                    <option value="Sri Lanka"> Sri Lanka </option>
+                    <option value="Sudan"> Sudan </option>
+                    <option value="Suriname"> Suriname </option>
+                    <option value="Svalbard"> Svalbard </option>
+                    <option value="eSwatini"> eSwatini </option>
+                    <option value="Sweden"> Sweden </option>
+                    <option value="Switzerland"> Switzerland </option>
+                    <option value="Syria"> Syria </option>
+                    <option value="Taiwan"> Taiwan </option>
+                    <option value="Tajikistan"> Tajikistan </option>
+                    <option value="Tanzania"> Tanzania </option>
+                    <option value="Thailand"> Thailand </option>
+                    <option value="Timor-Leste"> Timor-Leste </option>
+                    <option value="Togo"> Togo </option>
+                    <option value="Tokelau"> Tokelau </option>
+                    <option value="Tonga"> Tonga </option>
+                    <option value="Transnistria Pridnestrovie"> Transnistria Pridnestrovie </option>
+                    <option value="Trinidad and Tobago"> Trinidad and Tobago </option>
+                    <option value="Tristan da Cunha"> Tristan da Cunha </option>
+                    <option value="Tunisia"> Tunisia </option>
+                    <option value="Turkey"> Turkey </option>
+                    <option value="Turkmenistan"> Turkmenistan </option>
+                    <option value="Turks and Caicos Islands"> Turks and Caicos Islands </option>
+                    <option value="Tuvalu"> Tuvalu </option>
+                    <option value="Uganda"> Uganda </option>
+                    <option value="Ukraine"> Ukraine </option>
+                    <option value="United Arab Emirates"> United Arab Emirates </option>
+                    <option value="United Kingdom"> United Kingdom </option>
+                    <option value="Uruguay"> Uruguay </option>
+                    <option value="Uzbekistan"> Uzbekistan </option>
+                    <option value="Vanuatu"> Vanuatu </option>
+                    <option value="Vatican City"> Vatican City </option>
+                    <option value="Venezuela"> Venezuela </option>
+                    <option value="Vietnam"> Vietnam </option>
+                    <option value="British Virgin Islands"> British Virgin Islands </option>
+                    <option value="Isle of Man"> Isle of Man </option>
+                    <option value="US Virgin Islands"> US Virgin Islands </option>
+                    <option value="Wallis and Futuna"> Wallis and Futuna </option>
+                    <option value="Western Sahara"> Western Sahara </option>
+                    <option value="Yemen"> Yemen </option>
+                    <option value="Zambia"> Zambia </option>
+                    <option value="Zimbabwe"> Zimbabwe </option>
+                    <option value="other"> Other </option>
+                  </select>
+                  <label class="form-sub-label" for="input_27_country" id="sublabel_27_country" style="min-height:13px" aria-hidden="false"> Country </label>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_phone" id="id_28">
+        <label class="form-label form-label-top form-label-auto" id="label_28" for="input_28_country"> Phone Number (Home) </label>
+        <div id="cid_28" class="form-input-wide">
+          <div data-wrapper-react="true" class="extended">
+            <span class="form-sub-label-container " style="vertical-align:top" data-input-type="countryCode">
+              <input type="tel" id="input_28_country" name="q28_phoneNumber28[country]" class="form-textbox" size="6" value="" data-component="countryCode" aria-labelledby="label_28 sublabel_28_country" />
+              <span class="phone-separate" aria-hidden="true">
+                 -
+              </span>
+              <label class="form-sub-label" for="input_28_country" id="sublabel_28_country" style="min-height:13px" aria-hidden="false"> Country Code </label>
+            </span>
+            <span class="form-sub-label-container " style="vertical-align:top" data-input-type="areaCode">
+              <input type="tel" id="input_28_area" name="q28_phoneNumber28[area]" class="form-textbox" size="6" value="" data-component="areaCode" aria-labelledby="label_28 sublabel_28_area" />
+              <span class="phone-separate" aria-hidden="true">
+                 -
+              </span>
+              <label class="form-sub-label" for="input_28_area" id="sublabel_28_area" style="min-height:13px" aria-hidden="false"> Area Code </label>
+            </span>
+            <span class="form-sub-label-container " style="vertical-align:top" data-input-type="phone">
+              <input type="tel" id="input_28_phone" name="q28_phoneNumber28[phone]" class="form-textbox" size="12" value="" data-component="phone" aria-labelledby="label_28 sublabel_28_phone" />
+              <label class="form-sub-label" for="input_28_phone" id="sublabel_28_phone" style="min-height:13px" aria-hidden="false"> Phone Number </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_phone" id="id_29">
+        <label class="form-label form-label-top form-label-auto" id="label_29" for="input_29_country">
+          Phone Number (Cell)
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_29" class="form-input-wide jf-required">
+          <div data-wrapper-react="true" class="extended">
+            <span class="form-sub-label-container " style="vertical-align:top" data-input-type="countryCode">
+              <input type="tel" id="input_29_country" name="q29_phoneNumber29[country]" class="form-textbox validate[required]" size="6" value="" data-component="countryCode" aria-labelledby="label_29 sublabel_29_country" required="" />
+              <span class="phone-separate" aria-hidden="true">
+                 -
+              </span>
+              <label class="form-sub-label" for="input_29_country" id="sublabel_29_country" style="min-height:13px" aria-hidden="false"> Country Code </label>
+            </span>
+            <span class="form-sub-label-container " style="vertical-align:top" data-input-type="areaCode">
+              <input type="tel" id="input_29_area" name="q29_phoneNumber29[area]" class="form-textbox validate[required]" size="6" value="" data-component="areaCode" aria-labelledby="label_29 sublabel_29_area" required="" />
+              <span class="phone-separate" aria-hidden="true">
+                 -
+              </span>
+              <label class="form-sub-label" for="input_29_area" id="sublabel_29_area" style="min-height:13px" aria-hidden="false"> Area Code </label>
+            </span>
+            <span class="form-sub-label-container " style="vertical-align:top" data-input-type="phone">
+              <input type="tel" id="input_29_phone" name="q29_phoneNumber29[phone]" class="form-textbox validate[required]" size="12" value="" data-component="phone" aria-labelledby="label_29 sublabel_29_phone" required="" />
+              <label class="form-sub-label" for="input_29_phone" id="sublabel_29_phone" style="min-height:13px" aria-hidden="false"> Phone Number </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_email" id="id_30">
+        <label class="form-label form-label-top form-label-auto" id="label_30" for="input_30">
+          Email Address
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_30" class="form-input-wide jf-required">
+          <span class="form-sub-label-container " style="vertical-align:top">
+            <input type="email" id="input_30" name="q30_emailAddress" class="form-textbox validate[required, Email]" size="30" value="" data-component="email" aria-labelledby="label_30 sublabel_input_30" required="" />
+            <label class="form-sub-label" for="input_30" id="sublabel_input_30" style="min-height:13px" aria-hidden="false"> example@example.com </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_fileupload" id="id_31">
+        <label class="form-label form-label-top form-label-auto" id="label_31" for="input_31">
+          Government-Issued Photo ID
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_31" class="form-input-wide jf-required">
+          <div data-wrapper-react="true">
+            <div data-wrapper-react="true">
+              <div class="qq-uploader-buttonText-value">
+                Browse Files
+              </div>
+              <input type="file" id="input_31" name="q31_governmentissuedPhoto[]" multiple="" class="form-upload-multiple validate[required]" data-imagevalidate="yes" data-file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" data-file-maxsize="10854" data-file-minsize="0" data-file-limit="" data-component="fileupload" required="" />
+            </div>
+            <span style="display:none" class="cancelText">
+              Cancel
+            </span>
+            <span style="display:none" class="ofText">
+              of
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_32">
+        <div id="cid_32" class="form-input-wide">
+          <div id="text_32" class="form-html" data-component="text">
+            <p><span style="font-size: 8pt;">Although we will reserve you the cabin once the payment or deposit is paid, we must have the following completed documents PRIOR to sending</span><br /><span style="font-size: 8pt;">out the cabin access codes. Please send us the completed documents via email, mail or Fax. Noncompliance will void the reservation and forfeit</span><br /><span style="font-size: 8pt;">the rental fee:</span><br /><span style="font-size: 8pt;">1. Duly Completed “Acceptance of Abrams Falls Cabin Lease Agreement” (this form).</span><br /><span style="font-size: 8pt;">2. Bio-Data Page of your passport or government-issued Picture ID.</span><br /><span style="font-size: 8pt;">Contact Information (For Questions and Concerns):</span><br /><span style="font-size: 8pt;">Email: dsperera@csscom.net</span><br /><span style="font-size: 8pt;">Facsimile (FAX) #: +1-775-542-1805 </span><br /><span style="font-size: 8pt;">Address: 9015 Sandpiper Dr, Charlotte, NC 28277-5570</span><br /><span style="font-size: 8pt;">Our Contact Phone (voice/text) #: +1-704-266-0545</span></p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_2">
+        <div id="cid_2" class="form-input-wide">
+          <div style="margin-left:156px" data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+            <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+              Submit
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+  <input type="hidden" id="simple_spc" name="simple_spc" value="201535750175048" />
+  <script type="text/javascript">
+  document.getElementById("si" + "mple" + "_spc").value = "201535750175048-201535750175048";
+</form>
