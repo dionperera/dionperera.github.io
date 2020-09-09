@@ -1,5 +1,7 @@
 if (window.location.hostname == "dion.gov") {window.location.replace("http://dion.gov/test.html");}
-if (window.location.hostname == "filter.meetcircle.com"){window.location.replace("https://www.dionperera.com");}
-if (window.location.hostname == "dionperera.com"){console.log('Hello From the Console!');}
-if (window.location.hostname == "www.dionperera.com"){console.log('Hello From the Console!');}
-if (window.location.hostname == "test1.dionperera.com"){console.log('Hello From the Console reeee!');}
+else if (window.location.hostname == "filter.meetcircle.com"){window.location.replace("https://www.dionperera.com/block");}
+else if (window.location.hostname == "dionperera.com"){console.log('WS-ML');}
+else if (window.location.hostname == "www.dionperera.com"){console.log('WM');}
+else if (window.location.hostname == "test.dionperera.com"){console.log('T0');}
+else if (window.location.hostname == "b.dionperera.com"){console.log('CDN-CFD');}
+else {window.location.replace("https://www.dionperera.com");}
