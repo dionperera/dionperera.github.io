@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
     <script language="JavaScript">
-if(window.location.protocol != 'https:') {location.href = location.href.replace("http://", "https://");}
-    </script>
-    <script language="JavaScript">
     <!--
 
     document.onmousedown = myClickHandler;
@@ -42,10 +39,22 @@ body, html {
   left: 16px;
 }
 
+.topright {
+  position: absolute;
+  top: 0;
+  right: 16px;
+}
+
 .bottomleft {
   position: absolute;
   bottom: 0;
   left: 16px;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 16px;
 }
 
 .middle {
@@ -70,9 +79,50 @@ hr {
   </div>
   <div class="middle">
     <h1>COMING SOON</h1>
+    <hr>
+	<p id="timedate"></p>
+		<script type="text/javascript">
+			var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+			function GetClock(){
+			var d=new Date();
+			var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+			var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+			if(nmin<=9) nmin="0"+nmin;
+			if(nsec<=9) nsec="0"+nsec;
+
+			var clocktext=""+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+"";
+			document.getElementById('timedate').innerHTML=clocktext;
+			}
+
+			GetClock();
+			setInterval(GetClock,1000);
+		</script>
   </div>
   <div class="bottomleft">
     <p>Dion Perera © 2018-<script>document.write(new Date().getFullYear())</script></p>
+  </div>
+  <div class='topright'>
+	<p id="timedate"></p>
+		<script type="text/javascript">
+			var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+			function GetClock(){
+			var d=new Date();
+			var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+			var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+			if(nmin<=9) nmin="0"+nmin;
+			if(nsec<=9) nsec="0"+nsec;
+
+			var clocktext=""+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+"";
+			document.getElementById('timedate').innerHTML=clocktext;
+			}
+
+			GetClock();
+			setInterval(GetClock,1000);
+		</script>
   </div>
 </div>
 
