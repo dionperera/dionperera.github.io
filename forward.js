@@ -7,4 +7,5 @@ else if (window.location.hostname == "test.dionperera.com"){console.log('T0');}
 else if (window.location.hostname == "b.dionperera.com"){console.log('CDN-CFD');}
 else if (window.location.hostname == "ipv6.dionperera.com"){console.log('IPv6');}
 else if (window.location.hostname == "ipv4.dionperera.com"){console.log('IPv4');}
+else if (window.location.hostname == "34.107.190.230"){console.log('IPv4-Direct');}
 else {window.location.replace("https://www.dionperera.com");}
