@@ -1,6 +1,43 @@
+<html>
 <head>
     <title>Random Color</title>    
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="color-favicon.png" type="image/png">
+    <script language="JavaScript">
+	var clickEvent = (function() {
+  if ('ontouchstart' in document.documentElement === true)
+    return 'touchstart';
+  else
+    return 'click';
+})();
+    <!--
+	window.onload = myClickHandler;
+	document.touchstart = myClickHandler;
+	touchstart = myClickHandler;
+    document.onmousedown = myClickHandler;
+	
+    function myClickHandler() {
+      var bg_colour = Math.floor(Math.random() * 16777215).toString(16);
+      bg_colour = "#" + ("000000" + bg_colour).slice(-6);
+      document.bgColor = bg_colour;
+    }
+    -->
+document.addEventListener('contextmenu', event => event.preventDefault());
+document.getElementById('foo').addEventListener('click', function(e) {
+  location.reload();
+  e.preventDefault();
+});
+    </script>
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #212C4F;
+   color: white;
+   text-align: center;
+}
+</style>
     <script type="text/javascript">
 	    <body translate="no">
 <a href="https://www.dionperera.com">
@@ -8,6 +45,7 @@
 <polyline fill="none" stroke="#777777" stroke-width="0.1" points="0.9,0.1 0.1,0.5 0.9,0.9"></polyline>
 </svg> Home
 </a>
+
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-36420061-1']);
       _gaq.push(['_trackPageview']);
@@ -17,18 +55,33 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-	<meta http-equiv="refresh" content="0; URL='https://www.dionperera.com/color.html" /><script language="javascript">
+	<script language="javascript">
 	<script type="text/javascript">
 
 	    var Konamiz=function(){function a(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,function(b){return c.call(a,b)})}function b(a){var b="";for(var d=0;d<a.length;d++){var e=a[d].toUpperCase();typeof c[e]!="undefined"?b+=c[e]:b+=e.charCodeAt(0)}return b}var c={SPACE:32,ENTER:13,UP:38,DOWN:40,LEFT:37,RIGHT:39},d="38384040373937396665";return function(c){var e=function(){},f=function(){},g=c instanceof Array&&c.length>0?b(c):d,h="";(function(b){a(document,"keydown",function(a){h+=a.keyCode,console.log(h,g.indexOf(h)),h===g?(h="",b.isStarted?b.stop():b.start()):g.indexOf(h)===-1&&(h=a.keyCode+"")})})(this),this.isStarted=!1,this.onStart=function(a){return e=a,this},this.onStop=function(a){return f=a,this},this.start=function(){return e.call(this),this.isStarted=!0,this},this.stop=function(){return f.call(this),this.isStarted=!1,this}}}();
 	    var k = new Konamiz().onStart(function() {document.bgColor = "#6600CC";});
 	</script>
+	<script type="text/javascript">
+	    <button onClick="window.location.reload();">Click Here For Another Color!</button>
+	</script>
   </head>
-  <body>
-    <script type="text/javascript">
-      var bg_colour = Math.floor(Math.random() * 16777215).toString(16);
-      bg_colour = "#" + ("000000" + bg_colour).slice(-6);
-      document.bgColor = bg_colour;
-    </script>
+  <body onmousedown = 'return false' onselectstart = 'return false'>
+<div class="footer">
+	<center>
+<style>
+div.container p {
+font-family: Verdana;
+font-size: 22px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+text-transform: none;
+}
+</style>
+	<div class="container">
+		<p>Click Anywhere For Another Color!</p>
+	</div>
+	</center>
+</div>
   </body>
 </html>
