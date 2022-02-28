@@ -1,5 +1,26 @@
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    $('#contentDiv').load('http://my-user-agent.com #ua_string');
-</head>
+<!DOCTYPE html><html lang="en">
+<meta charset="UTF-8" />
+<title>IP Address</title>
+  <div id="main">
+<p> <b> Your IPv4 Address is: </b> </p>
+<p style="width:50%; height:10%; padding: 1px; border: 2px solid grey;">
+<object data="https://api4.ipify.org/" width="50%" height="10%">
+<p style="width:200px; height:20px; padding: 1px; border: 1px solid red;">Error: IPv4 Not Detected</p> <br> <br>
+</object>
+</p>
+<br></br>
+<p> <b> Your IPv6 Address is: </b> </p>
+<p style="width:50%; height:10%; padding: 1px; border: 2px solid grey;">
+<object data="https://api6.ipify.org/" width="50%" height="10%">
+<p style="width:200px; height:20px; padding: 1px; border: 1px solid red;">Error: IPv6 Not Detected</p> <br> <br>
+</object>
+</p>
+  </div>
+<div id="attr">
+  <footer>
+    <p class="font_9"><a href="https://www.dionperera.com/" target="_blank" data-content="https://www.dionperera.com/" data-type="external" rel="undefined"><span class="color_14">Dion Perera © 2018-
+      <script>document.write(new Date().getFullYear())</script>
+  </footer>
+  </div>
+  
+// http://useragentstring.com/?uas=&getText=os_name-agent_name-agent_version
